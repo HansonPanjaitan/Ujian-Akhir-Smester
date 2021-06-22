@@ -1,10 +1,16 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div class="h-24 text-gray-100  flex flex-row pb-2"> 
+        <div class="flex flex-row text-gray-200 text-xl font-extrabold pl-6 pt-4" style="">
+          <router-link to="/">Home</router-link> 
+        </div>
+        <div class="flex flex-row text-gray-200 text-3xl font-black tracking-wide" style="padding-left: 420px; padding-top: 28px">
+          <router-link to="/covid">Aplikasi Data Covid</router-link> 
+        </div>
+      </div>
     </div>
-    <router-view/>
+  <router-view/>
   </div>
 </template>
 
@@ -18,15 +24,10 @@
 }
 
 #nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  background-color: #42b400;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: springgreen;
 }
 </style>
